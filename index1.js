@@ -84,6 +84,7 @@ setInterval(function()
     {
         // page has changed, set new page as 'current'
         currentPage = location.href;
+        if(currentPage.split("/")[4] == 'bzklh1923-p1-contest')
         getapi(api_url);
         // do your thing..
     }
