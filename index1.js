@@ -1,5 +1,6 @@
 const api_url = 
-"https://docs.google.com/spreadsheets/d/e/2PACX-1vQOZ5pT8riOQkdZwIAGNirQb26Lgvrffoq4MzXjUerfMJtwXFCSYemXkX-yd9o2zyD9Yksv2hqFPpsL/pub?output=csv";
+"https://docs.google.com/spreadsheets/d/e/2PACX-1vRr4u7kpUQg16Ae-G3PshSCuChLJaM2T6AkWLfLCWVROddd0D-digPDDJ8yJTuujPzIJX43M3BxMLDG/pub?output=csv";
+// "https://docs.google.com/spreadsheets/d/e/2PACX-1vQOZ5pT8riOQkdZwIAGNirQb26Lgvrffoq4MzXjUerfMJtwXFCSYemXkX-yd9o2zyD9Yksv2hqFPpsL/pub?output=csv";
   var data;
   var arr = [] ;
   var arr1 = [];
@@ -85,6 +86,8 @@ setInterval(function()
         // page has changed, set new page as 'current'
         currentPage = location.href;
         if(currentPage.split("/")[4] == 'bzklh1923-p1-contest')
+        getapi(api_url);
+        if(currentPage.split("/")[4] == 'bzcmrcet2024-p1-contest')
         getapi(api_url);
         // do your thing..
     }
